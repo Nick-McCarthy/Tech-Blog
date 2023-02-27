@@ -1,0 +1,13 @@
+<div>
+<a href="/dashboard/new"><button type="button" class="btn btn-primary btn-lg">New Blog</button></a>
+</div>
+{{#each userBlogs as |blog| }}
+<div class="card">
+<div class="card-body">
+  <a href="/dashboard/edit/{{blog.id}}">
+        <p style="float:right;">{{blog.date_created}}</p>
+        <h3>{{blog.title}}</h3>
+  </a>
+</div>
+</div>
+{{/each}}

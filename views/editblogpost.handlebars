@@ -1,0 +1,18 @@
+<h2>Edit Blog <a href="/dashboard" class="exit-btn">X</a></h2>
+
+<form class="form editBlog-form" data-id="{{blog.id}}">
+  <div class="mb-3 form-group">
+    <label for="editBlog-title" class="editBlog-form">Title:</label>
+    <textarea class="form-input" id="editBlog-title" rows="1" maxlength="50">{{blog.title}}</textarea>
+  </div>
+  <div class="mb-3 form-group">
+    <label for="editBlog-description" class="editBlog-form">Description:</label>
+    <textarea class="form-input" id="editBlog-description" rows="3" maxlength="300">{{blog.description}}</textarea>
+  </div>
+  <div class="form-group">
+    <button type="submit" class="btn btn-primary btn-lg">Update</button>
+    <button type="click" data-id="{{blog.id}}" class="deleteBlog-btn btn btn-danger btn-lg" style="float:right;">Delete</button>
+  </div>
+</form>
+
+<script src="/js/editblogpost.js"></script>
