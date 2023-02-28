@@ -10,10 +10,13 @@ router.get('/', withAuth, (req, res) => {
     })
     .catch(err => { res.status(500).json(err) })
 });
-
-router.get('/new', withAuth, (req, res) => {
-    res.render('newblogpost', {name: req.session.name, user_id: req.session.user_id, logged_in: req.session.logged_in})
-    .catch(err => { res.status(500).json(err) })
+//finish nick
+router.get('/new', withAuth, async (req, res) => {
+    try {
+        res.render('newblogpost', {name: req.session.name, user_id: req.session.user_id, logged_in: req.session.logged_in});
+    }catch (err) { 
+        res.status(500).json(err)
+    }
 });
 
 router.get('/edit/:id', withAuth, (req, res) => {
