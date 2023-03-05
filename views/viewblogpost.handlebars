@@ -1,18 +1,18 @@
 <div class="card">
     <div class="card-body">
-            <h3>{{title}} <a href="/" class="exit-btn">X</a></h3>
-            <p>{{description}}</p>
-            <p>Created By: <b>{{user.name}}</b> on {{date_created}}</p>
+            <h3>{{blog.title}} <a href="/" class="exit-btn">X</a></h3>
+            <p>{{blog.description}}</p>
+            <p>Created By: <b>{{blog.user.name}}</b> on {{blog.date_created}}</p>
     </div>
 </div>
 
 {{> newComment}}
-{{#each comments as |comment|}}
+{{#each blog.comments as | comment|}}
 <div class="card">
     <div class="card-body">
-        <p style="float:right;">{{date_created}}</p>
-        <h4><b>{{user.name}}</b></h4>
-        <p>{{description}}</p>
+        <p style="float:right;">{{comment.date_created}}</p>
+        <h4><b>{{comment.user.name}}</b></h4>
+        <p>{{comment.description}}</p>
     </div>
 </div>
 {{/each}}

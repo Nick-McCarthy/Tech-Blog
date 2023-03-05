@@ -3,7 +3,8 @@ const { Comment } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 router.post('/', withAuth, (req, res) => {
-    Comment.create({ ...req.body, user_id: req.session.user_id, })
+    console.log('------------------------------', req.body)
+    Comment.create({ ...req.body, blog_id: parseInt(req.body.blog_id), user_id: req.session.user_id, })
         .then(newComment => { res.json(newComment) })
         .catch(err => { res.status(500).json(err) })
 });

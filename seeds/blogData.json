@@ -1,20 +1,20 @@
 [
   {
     "id": 1,
-    "title": "thingy",
-    "description": "filler 5",
+    "title": "Thim Ro",
+    "description": "Pharetra massa massa ultricies mi. Ac tortor vitae purus faucibus",
     "user_id": 1
   },
   {
     "id": 2,
-    "title": "thingy majig",
-    "description": "filler 4",
+    "title": "Peranos Patra",
+    "description": "Quam elementum pulvinar etiam non quam lacus suspendisse faucibus.",
     "user_id": 2
   },
   {
     "id": 3,
-    "title": "whatcha callit",
-    "content": "filler 3",
+    "title": "Lorem Ip Sum",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
     "user_id": 3
   }
 ]

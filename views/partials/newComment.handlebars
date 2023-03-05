@@ -1,7 +1,7 @@
 {{#if logged_in}}
 <div class="card">
 <div class="card-body">
-    <form class="form newComment-form" data-id="{{id}}">
+    <form class="form newComment-form" data-id={{blog.id}}>
         <div class="mb-3 form-group">
             <label for="newComment" class="newComment-form">Comment:</label>
             <textarea class="form-input" id="newComment" rows="3" maxlength="300"></textarea>
