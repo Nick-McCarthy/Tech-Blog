@@ -12,14 +12,10 @@ A tech blog built with node, express, mysql, and handlebars.
  - [Test](#test) 
  - [Questions](#questions) 
  ## Installation 
- Filler
+ NA
  ## Usage 
- Filler
- <br>
- caption: 
-<br>
-![<img src="" width="250"/>](images/)
-<br>
+ live url:
+ https://tech-blog-uta.herokuapp.com/
 
  ## License 
  MIT License 
